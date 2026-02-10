@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    width: 100%;
+    padding: 20px 15px;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(81, 81, 81);
+    font-size: 24px;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: rgb(81, 81, 81);
+    cursor: pointer;
+    margin-left: auto;
+}
+
+#links {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(127, 125, 125);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.home {
+    color: red;
+}
+
+li a:hover {
+    color: rgb(216, 46, 46);
+}
+
+#start button {
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start {
+    margin-left: 20px;
+}
+
+#start button:hover {
+    background-color: rgb(234, 63, 63);
+}
+
+.on {
+    background-color: whitesmoke;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.on h2 {
+    font-size: clamp(24px, 4vw, 30px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.on h5 {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pricing-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 60px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.all,
+.all2,
+.all3,
+.all4 {
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 40px 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.all:hover,
+.all2:hover,
+.all3:hover,
+.all4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.all h1,
+.all2 h1,
+.all3 h1,
+.all4 h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    color: rgb(64, 55, 55);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.all2 h1 {
+    background-color: rgb(235, 43, 43);
+    color: white;
+}
+
+.all h2,
+.all2 h2,
+.all3 h2,
+.all4 h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    margin: 20px 0;
+    color: rgb(64, 55, 55);
+}
+
+.all p,
+.all2 p,
+.all3 p,
+.all4 p {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 15px 0;
+    color: rgb(100, 100, 100);
+}
+
+.alll,
+.alll2,
+.alll3,
+.alll4 {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.alll h3,
+.alll2 h3,
+.alll3 h3,
+.alll4 h3 {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(235, 43, 43);
+    padding: 12px 24px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.alll h3:hover,
+.alll2 h3:hover,
+.alll3 h3:hover,
+.alll4 h3:hover {
+    background-color: rgb(200, 30, 30);
+}
+
+.foot {
+    width: 100%;
+    background-color: rgb(37, 57, 57);
+    padding: 50px 20px 20px;
+    margin-top: 80px;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.foot_1,
+.foot_2,
+.foot_3 {
+    flex: 1;
+    min-width: 200px;
+}
+
+.foot_1 h2 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.foot_1 p {
+    font-family: cursive;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.foot_1 i {
+    font-size: 24px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.foot_1 i:hover {
+    background-color: red;
+    border-color: red;
+}
+
+.foot_2 h2 {
+    color: white;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+}
+
+.foot_2 p {
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.foot_2 p:hover {
+    color: red;
+}
+
+.foot_3 h3 {
+    color: white;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+}
+
+.foot_3 p {
+    font-size: 15px;
+    color: white;
+    line-height: 1.6;
+}
+
+.ok {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.ok input {
+    flex: 1;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.ok input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.kk {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+.kk:hover {
+    background-color: rgb(200, 30, 30);
+}
+
+.copy {
+    background-color: rgb(37, 57, 57);
+    width: 100%;
+    padding: 30px 20px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.copy_1,
+.copy_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.copy_1 i {
+    color: white;
+}
+
+.copy_1 p {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.copy_2 p {
+    color: rgb(133, 158, 158);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.copy_2 span {
+    color: rgb(225, 27, 27);
+    margin-left: 5px;
+}
+
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #links {
+        display: none;
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+    #links.active {
+        display: block;
+    }
+
+    #links ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    #links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #start {
+        margin: 15px auto 0;
+    }
+
+    #start button {
+        width: 100%;
+    }
+
+    .on {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pricing-section {
+        padding: 40px 15px;
+    }
+
+    .all,
+    .all2,
+    .all3,
+    .all4 {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .ok {
+        flex-direction: column;
+    }
+
+    .ok input {
+        width: 100%;
+    }
+
+    .kk {
+        text-align: center;
+        width: 100%;
+    }
+
+    .copy_1,
+    .copy_2 {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .all h1,
+    .all2 h1,
+    .all3 h1,
+    .all4 h1 {
+        font-size: 20px;
+    }
+
+    .all h2,
+    .all2 h2,
+    .all3 h2,
+    .all4 h2 {
+        font-size: 24px;
+    }
+}

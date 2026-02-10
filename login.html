@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="inputs">
+            <input type="text" placeholder="Username" id="names">
+            <input type="password" name="" id="password" placeholder="Password">
+            <input type="submit" value="Get Started" id="get" onclick="validate()">
+        </div>
+
+        <div id="remember">
+            <input type="checkbox" name="" id="box">
+            <label for="box">Keep me Logged in</label>
+            <a href="#">Forgot Password?</a>
+        </div>
+
+        <div id="new-user">
+            <a href="#">CREATE ACCOUNT</a>
+        </div>
+
+        <div id="help">
+            <a href="#">NEED HELP?</a>
+        </div>
+    </div>
+
+    <script>
+        function validate(){
+            users = ["Tofunmi", "Uche", "Yinka"]
+            userpass = ["tofunmi29", "uche12", "yinka12"]
+
+            let names = document.getElementById("names").value
+            let password = document.getElementById("password").value
+
+            if(names == users[0] && password == userpass[0]){
+                window.open("indexpage.html")
+            }
+            else if(names == users[1] && password == userpass[1]){
+                window.open("indexpage.html")
+            }
+            else if(names == users[2] && password == userpass[2]){
+                window.open("indexpage.html")
+            }
+            else{
+                alert("No account found. CREATE NEW ACCOUNT")
+            }
+        }
+    </script>
+</body>
+</html>

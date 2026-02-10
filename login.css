@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: burlywood;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, salmon 25%, sandybrown 30%, sienna 2%);
+    overflow-x: hidden;
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 550px;
+    min-height: 400px;
+    border-radius: 30px;
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    transition: all 0.3s ease;
+}
+
+#inputs {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+label {
+    color: #ffffff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+input {
+    padding: 20px 25px;
+    border-radius: 35px;
+    border: none;
+    width: 100%;
+    max-width: 350px;
+    color: white;
+    background-color: rgba(179, 173, 173, 0.32);
+    margin: 0 auto;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#get {
+    background-color: rgb(255, 20, 87);
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 350px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#get:hover {
+    background-color: white;
+    border: 3px solid rgb(252, 44, 103);
+    color: rgb(255, 20, 87);
+    font-weight: bold;
+}
+
+#remember {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#box {
+    background-color: rgba(179, 173, 173, 0.32);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#remember label {
+    font-size: 14px;
+}
+
+#remember a {
+    text-decoration: none;
+    color: rgb(244, 182, 200);
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+#remember a:hover {
+    color: rgb(242, 130, 153);
+}
+
+#new-user {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#new-user a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s;
+    border-radius: 30px;
+}
+
+#new-user a:hover {
+    color: rgb(255, 20, 87);
+    background-color: #ffffff;
+}
+
+#help {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#help a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s;
+    border-radius: 30px;
+}
+
+#help a:hover {
+    color: rgb(255, 20, 87);
+    background-color: #ffffff;
+}
+
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* Tablets and below (768px) */
+@media screen and (max-width: 768px) {
+    #wrapper {
+        max-width: 480px;
+        padding: 30px 25px;
+        border-radius: 25px;
+    }
+
+    input {
+        padding: 18px 20px;
+        max-width: 100%;
+    }
+
+    #get {
+        height: 55px;
+        letter-spacing: 2px;
+        font-size: 15px;
+    }
+
+    #remember {
+        font-size: 13px;
+    }
+
+    #remember a {
+        font-size: 13px;
+    }
+}
+
+/* Mobile devices (480px and below) */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    #wrapper {
+        max-width: 100%;
+        padding: 25px 20px;
+        border-radius: 20px;
+        min-height: auto;
+    }
+
+    #inputs {
+        margin: 15px 0;
+    }
+
+    input {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+    #get {
+        height: 50px;
+        letter-spacing: 1.5px;
+        font-size: 14px;
+    }
+
+    #remember {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #remember label {
+        font-size: 12px;
+    }
+
+    #remember a {
+        font-size: 12px;
+    }
+
+    #new-user a,
+    #help a {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+}
+
+/* Very small mobile devices (360px and below) */
+@media screen and (max-width: 360px) {
+    #wrapper {
+        padding: 20px 15px;
+    }
+
+    input {
+        padding: 12px 15px;
+        font-size: 13px;
+    }
+
+    #get {
+        height: 45px;
+        font-size: 13px;
+    }
+
+    #new-user a,
+    #help a {
+        font-size: 12px;
+        padding: 7px 14px;
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sailor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/CSS/up.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>SAILOR</h1>
+        </div>
+
+        <nav>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div id="links">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="up.html" class="home">Portfolio</a></li>
+                    <li><a href="up2.html">Pricing</a></li>
+                    
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div id="start">
+                <button>Get Started</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="on">
+        <h2>Portfolio</h2>
+        <h5>Home / Portfolio</h5>
+    </section>
+
+    <section class="all">
+        <h2>All</h2>
+        <h3>App</h3>
+        <h4>Card</h4>
+        <h4>Web</h4>
+    </section>
+
+    <footer class="foot">
+        <div class="footer-wrapper">
+            <div class="foot_1">
+                <h2>SAILOR</h2>
+                <p>A108 Adam Street <br>New York, NY 535022</p>
+                <p>Phone: +1 5589 55488 55</p>
+                <p>Email: info@example.com</p>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-apple" aria-hidden="true"></i>
+            </div>
+
+            <div class="foot_2">
+                <h2>Useful Link</h2>
+                <p>Home</p>
+                <p>About us</p>
+                <p>Services</p>
+                <p>Terms of service</p>
+                <p>Privacy policy</p>
+            </div>
+
+            <div class="foot_2">
+                <h2>Our Services</h2>
+                <p>Web Design</p>
+                <p>Web Development</p>
+                <p>Product Management</p>
+                <p>Marketing</p>
+                <p>Graphic Design</p>
+            </div>
+
+            <div class="foot_3">
+                <h3>Our Newsletter</h3>
+                <p>Subscribe to our newsletter and receive the latest news about our products and Services</p>
+                <div class="ok">
+                    <input type="text" placeholder="Your email">
+                    <div class="kk">Subscribe</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy">
+            <div class="copy_1">
+                <i class="fa fa-copyright" aria-hidden="true"></i>
+                <p>Copyright Sailor All Rights Reserved</p>
+            </div>
+            <div class="copy_2">
+                <p>Designed by <span>BootstrapMade</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const links = document.getElementById('links');
+        mobileMenuToggle.addEventListener('click', function() {
+            links.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
